@@ -103,9 +103,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buyNowBtn" translatesAutoresizingMaskIntoConstraints="NO" id="eGv-UK-VYU">
-                                <rect key="frame" x="75" y="635" width="225" height="45"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o9m-Tg-pjw">
                                 <rect key="frame" x="36" y="544" width="303" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -118,6 +115,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buyNowBtn" translatesAutoresizingMaskIntoConstraints="NO" id="eGv-UK-VYU">
+                                <rect key="frame" x="75" y="635" width="225" height="45"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -176,6 +176,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="buyBtn" destination="eGv-UK-VYU" id="ZQx-I6-D4W"/>
+                        <outlet property="country" destination="o9m-Tg-pjw" id="8Nj-QA-dpL"/>
+                        <outlet property="countryBar" destination="SOX-oa-Wld" id="iwQ-bZ-gMA"/>
+                        <outlet property="postCdBar" destination="tsf-Yx-pPL" id="wKx-k2-iWj"/>
+                        <outlet property="postCode" destination="e2g-Yg-FOM" id="Z4a-fS-L3N"/>
                         <outlet property="statePicker" destination="SQJ-Uh-uM5" id="afb-9Y-f0c"/>
                         <outlet property="statePickerBtn" destination="TGK-1Q-L2D" id="FCK-d0-UkZ"/>
                     </connections>
