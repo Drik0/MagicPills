@@ -17,7 +17,9 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     @IBOutlet weak var postCdBar: UITextField!
     @IBOutlet weak var country: UILabel!
     @IBOutlet weak var countryBar: UITextField!
-    @IBOutlet weak var buyBtn: UIImageView!
+    @IBOutlet weak var buyBtn: UIButton!
+    @IBOutlet weak var blankView: UIView!
+    @IBOutlet weak var success: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,6 +64,15 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         country.isHidden = false
         postCdBar.isHidden = false
         buyBtn.isHidden = false
+    }
+    @IBAction func buyBtnPressed(_ sender: Any) {
+        blankView.isHidden = false
+        success.isHidden = false
+    }
+    
+    @IBAction func successPressed(_ sender: Any) {
+        blankView.isHidden = true
+        success.isHidden = true
     }
 }
 
